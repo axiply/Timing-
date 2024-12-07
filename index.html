@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Time • Lazy2Leader</title>
+    <link rel="stylesheet" href="../styles/timer.css">
+    <link rel="stylesheet" href="../styles/xpbar.css">
+</head>
+    <script src="../src/stopwatch.js" defer></script>
+    <script src="../dist/xpbar.js"></script>
+<body>
+    <section class ="hero">
+        <h2>Welcome to the Study Zone</h2>
+    </section>
+
+    <div class ="stopwatch">
+        <img id="mute-button" class="mute-button" src="../assets/unmuted.png">
+
+        <div class ="xp-container">
+            <div class = "xp-bar" id = "xp-bar">
+            <span id = "level-text" style="z-index: 1; position: absolute; align-self: center; margin-left: -15px; margin-top: 7px;">Lv. 1</span>"
+            <div class = "xp-glow" id ="xp-glow"></div>
+            </div>
+        </div>
+        <div class = "xp-info">
+            <!-- <span id="xp-text">XP: 0/100</span><br> -->
+            <!-- <span id="level-text">Level: 1</span> -->
+        </div>
+        <!-- <button onclick="addXP(10)">Gain 10 XP</button> -->
+        <div id="level-up-image" style="display: flex; justify-content: center;">
+            <video style="border-radius: 25px;" class="hidden" width="400" muted>
+                <source src="../assets/fifteenMinuteAlert.mov" type="video/mp4">
+            </video>
+            <video style="border-radius: 25px;" class="hidden" width="400" muted>
+                <source src="../assets/thirtyMinuteAlert.mov" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <h1 id="displayTime">00:00:00</h1>
+        <div class = "buttons">
+            <img id="timerStart" style="width: 30px;" src="../assets/play.png">
+            <img id="timerPause" style="width: 30px;" src="../assets/pause.png">
+            <img id="timerReset" style="width: 30px;" src="../assets/stop.png">
+        </div>
+
+        <div class="music-player">
+            <h2 class="playing">Now Playing: <span class="song-name"></span></h2>
+            <div class="controls">
+                <div class="sidecontainer">
+                    <input type = "range" min="0" max="100" value = "100" class = "slider" id="volumeSlider">
+                </div>
+                <button id="previous" class="btn previous">
+                    <img class="btn-image" src="../assets/skip-to-start.png">
+                </button>
+                <button id="play-pause" class="btn play-pause">
+                    <img class="btn-image" src="../assets/play.png">
+                </button>
+                <button id="next" class="btn next">
+                    <img class="btn-image" src="../assets/skip-to-end.png">
+                </button> 
+            </div>
+        </div>
+    </div>
+
+        
+
+
+<footer>
+    <p>&copy; 2024 Lazy2Leader. All rights reserved</p>
+</footer>
+
+</body>
+</html>
