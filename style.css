@@ -37,7 +37,85 @@ body {
     transition: all 0.5s;
 }
 
-buttons img{
-    width
+.buttons img{
+    width: 49px;
+    margin: 0 19px;
+    cursor: pointer;
+    transition: all 0.5s;
 }
 
+.buttons img:hover{
+    transform: scale(1.25);
+}
+
+.buttons img:nth-child(1){
+    width: 80px;
+}
+
+.buttons img:nth-child(2){
+    width: 80px
+}
+
+.mute-button{
+    width: 30px;
+    margin-left:20px;
+    margin-top: -20px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.5s;
+    flex: 0;
+}
+
+.mute-button:hover{
+    transform: scale(1.25);
+}
+
+header{
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1{
+    margin: 0;
+}
+
+header nav ul{
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+ 
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    padding: 2rem;
+    text-align: center;
+    background: #34f1fe;
+    color: #333;
+}
+
+.resources {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.resource-item{
+    background: #fff;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex:1;
+    min-width: 200px;
+    max-width: 300px;
+}
